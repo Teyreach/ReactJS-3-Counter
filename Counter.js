@@ -56,24 +56,28 @@ var Counter = React.createClass({
     },
 
     componentDidMount: function() {
-        console.log('Rendering done.');    
+        console.log('add event listener, get data');    
     },
 
     componentWillReceiveProps: function() {
-        console.log('Display new props.');    
+        console.log('Display new props. Update the state based on properties');    
     },
 
     shouldComponentUpdate: function() {
         console.log('True/False');    
         return  true;
     },
+	
+	 componentWillUpdate(){
+    console.log('If shouldComponentUpdate is true then it will execute');
+  },
 
     componentDidUpdate: function() {
-        console.log('Rendering done.');    
+        console.log('Rendering done. DOM');    
     },
 
     componentWillUnmount: function() {
-        console.log('Discard component.');    
+        console.log('Discard timers.');    
     },
 
 });
