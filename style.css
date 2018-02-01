@@ -1,0 +1,16 @@
+
+button {
+  background-color: #70a1ff;
+  color: #fff;
+  display: inline;
+  margin: 2px 5px;
+  cursor: pointer;
+  border: solid 1px #fff;
+}
+span{
+	padding: 0;
+}
+
+div{
+	text-align: center;
+}
